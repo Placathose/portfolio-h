@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+li, a {
+  list-style-type: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  /* display: grid; */
+  /* place-items: center; */
+  /* align-content: center; */
+  min-height: 85vh;
+  padding: 0 20px;
+}
+
+.center-header {
+  place-items: center;
+  margin-bottom: 40px;
+}
+
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+
+.title-hero {
+  font-size: 50px;
+  font-weight: 800;
+}
+
+/* To avoid the animation running again and again */
+@media(prefers-reduced-motion) {
+  .hidden {
+    transition: none;
+  }
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+.card-container {
+  display: flex;
+  /* background-color: blue; */
+  min-width: 700px;
+  justify-content: space-around;
+  margin-top: 100px;
+}
+
+.card {
+  height: 100px;
+  width: 100px;
+
+}
+
+.big-card {
+  height: 300px;
+  width: 300px;
+}
+
+/* Project Cards */
+
+.card-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 30px;
+  place-items: center;
+}
+
+.p-card {
+  background-color: royalblue; 
+  width: 290px;
+  height: 350px;
+}
+
+
+/* Animation */
+
+.card:nth-child(1) {
+  transition-delay: 200ms;
+}
+.card:nth-child(2) {
+  transition-delay: 400ms;
+}
+.card:nth-child(3) {
+  transition-delay: 600ms;
+}
+.card:nth-child(4) {
+  transition-delay: 800ms;
+}
+.card:nth-child(5) {
+  transition-delay: 1000ms;
+}
+
+@keyframes spin {
+  to {
+    transform: rotateY(5turn);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  div.google {
+    animation: spin 5s ease infinite;
+  }
+}
