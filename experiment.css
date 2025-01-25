@@ -74,10 +74,34 @@ section {
 }
 
 .p-card {
-  background-color: royalblue; 
+  /* background-color: royalblue;  */
   width: 290px;
   height: 350px;
+  border-radius: 10px;
+  border: 1px solid #343A39;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+
 }
+
+.project-img {
+  max-width: 100%;
+  max-height: 50%;
+  object-fit: cover;
+}
+
+.visit-btn {
+  display: block;
+  text-align: center;
+  padding: 10px 0;
+  border-radius: 5px;
+  background-color: #343A39;
+  color: #E0E5E5;
+  /* sends the btn at bottom */
+  margin-top: auto;
+}
+
 
 
 /* Animation */
