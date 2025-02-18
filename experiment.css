@@ -76,7 +76,7 @@ section {
 .p-card {
   /* background-color: royalblue;  */
   width: 290px;
-  height: 350px;
+  height: 400px;
   border-radius: 10px;
   border: 1px solid #343A39;
   padding: 15px;
@@ -102,7 +102,30 @@ section {
   margin-top: auto;
 }
 
+.title {
+  font-family: 32px;
+  font-weight: 700;
+  margin: 10px 0;
+  color: #21423c;
+}
 
+.description {
+  margin-bottom: 10px;
+}
+
+.tag-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tags {
+  background-color: bisque;
+  padding: 2px 5px;
+  border-radius: 10px;
+  border: 1px solid #343A39;
+  margin-right: 5px;
+  margin-top: 3px;
+}
 
 /* Animation */
 
